@@ -1,0 +1,22 @@
+<div class="bouncing-text">
+    This text will bounce!
+</div>
+
+<style>
+.bouncing-text {
+    display: inline-block;
+    animation: bounce 2s infinite alternate;
+}
+
+@keyframes bounce {
+    from {
+        transform: translateX(0);
+    }
+    to {
+        transform: translateX(300px);
+    }
+}
+</style>
+<marquee behavior="alternate" direction="right" style="width: 300px;">
+    This text will bounce!
+</marquee>

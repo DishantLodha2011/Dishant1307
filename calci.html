@@ -1,14 +1,12 @@
 <html>
-<head>
-<title>Simple calculator</title>
-</head>
+<body>
 <script>
-let num1=parseFloat(prompt("enter first number:"));
-let num2=parseFloat(prompt("enter second number:"));
-if(isNaN(num1)||	 isNaN(num2)){
-alert("invalid input. Please enter numbers.");}
-else{let sum = num1 + num2;
-alert("the sum is: "+ sum);}
+let score = parseInt (prompt("enter your score"));
+if(score >= 90){
+alert("grade: A");}
+else if(score >= 80){
+alert("grade: B");}
+else if(score >=70){
+alert("grade: C");}
+else{alert("grade: F");}
 </script>
-</body>
-</html>

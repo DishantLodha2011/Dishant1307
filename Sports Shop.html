@@ -25,36 +25,36 @@ border-radius: 10px;}
 <div class="item">
 <p>
 <img src="https://cdn.sweatband.com/spalding_nba_silver_indooroutdoor_basketball_ss17_nba_silver-side_2000x2000.jpg"height="100"width="100">
-Basketball - 600</p>
+Basketball - ₹ 600</p>
 <button onclick="addToCart('Basketball',600)">Add To Cart</button></div>
 
 <div class="item">
 <p>
 <img src="https://tse1.mm.bing.net/th/id/OIP.bcUTHL2l6Db7iz1H4kNFkQHaE8?cb=ucfimg2&ucfimg=1&rs=1&pid=ImgDetMain&o=7&rm=3"height="100"width="100">
-Football - 1200</p>
+Football - ₹ 1200</p>
 <button onclick="addToCart('Football',600)">Add To Cart</button></div>
 
 
 <div class="cart">
-<h3>Shopping Cart
+<h3>Shopping Cart</h3>
 <p id="cartList">Cart is empty</p>
-<h3>Total: <span
-id ="total Amount">0</span></h3>
+<h3>Total: ₹<span
+id ="totalAmount">0</span></h3>
 </div>
-<script
-let TotalAmount= 0;
+<script>
+let totalAmount= 0
 function addToCart(item,price){
-let cart=document.getElementByld("cartList");
+let cart=document.getElementById("cartList");
 let total=
-document.getElementByld("totalAmount");
+document.getElementById("totalAmount");
 // Update cart items
 if(cart.innerHTML === "Cart is empty"){
-cart.innerHTML = item;
+cart.innerHTML = item;}
 else{
 cart.innerHTML +="," + item;}
-//Update total amount
+	//Update total amount
 totalAmount += price;
-total.innerHTML = totalAmount;
+total.innerHTML = totalAmount;}
 </script>
 </body>
 </html>

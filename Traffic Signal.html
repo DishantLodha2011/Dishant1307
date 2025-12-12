@@ -1,12 +1,18 @@
 <html>
 <style>
-.light{max-width:1000px;
-     margin: auto;
-     background-color: black; 
-     border-radius: 30px;
-     margin: 10px auto;
-     animation: traffic 6s infinite;}
+.light{width:60px;
+       height:60px;
+       margin: auto;
+       background-color: black; 
+       border-radius: 30px;
+       margin: 10px auto;
+       animation: traffic 6s infinite;}
 
+@keyframes traffic {
+  0%   { background: red; }
+  33%  { background: yellow; }
+  66%  { background: green; }
+  100% { background: red; }
 
 
 

@@ -1,31 +1,53 @@
+<!DOCTYPE html>
 <html>
-<style>
-div{width:60px;
-       height:60px;
-       margin: auto;
-       background-color: black; 
-       border-radius: 30px;
-       margin: 10px auto;
-       animation-name:traffic;
-       animation-duration:6s;}
+<head>
+    <title>Signal.re</title>
+    <style>
+        /* CSS styles will go here */
+        .signal {
+            width: 80px;
+            padding: 20px;
+            background: #333;
+            border-radius: 20px;
+            margin: auto;
+        }
 
-@keyframes traffic {
-  0%   { background: red; }
-  33%  { background: yellow; }
-  66%  { background: green; }
-  100% { background: red; }
-    
-h1{color: #ff4500;
-    font-size: 30px;}
+        .light {
+            width: 60px;
+            height: 60px;
+            margin: 15px auto;
+            border-radius: 50%;
+            background-color: #111; /* Dark background when off */
+            animation: traffic 6s infinite;
+        }
 
-       </style>
-       <body>
-              <div class="signal"
-                     <div class="red"></div> <div class="yellow"></div> <div class="green"></div><div class="red"></div>
-                     
-       </body>
+        .red { 
+            animation-delay: 0s; 
+        }
+        
+        .yellow { 
+            animation-delay: 2s; 
+        }
+        
+        .green { 
+            animation-delay: 4s; 
+        }
+
+        @keyframes traffic {
+            0% { background-color: #111; }
+            20% { background-color: currentColor; } /* Use color from .red, .yellow, or .green */
+            40% { background-color: #111; }
+            100% { background-color: #111; }
+        }
+    </style>
+</head>
+<body>
+    <h1>Signal.re !!!</h1>
+
+    <div class="signal">
+        <div class="light red" style="background-color: red;"></div>
+        <div class="light yellow" style="background-color: yellow;"></div>
+        <div class="light green" style="background-color: green;"></div>
+    </div>
+</body>
 </html>
-
-
-    
-     

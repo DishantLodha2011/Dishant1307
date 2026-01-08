@@ -1,0 +1,26 @@
+<html>
+<style>
+h1{text-align:center;
+   padding:50px;}
+img{width:200px;
+    align:center;}
+button{padding:10px 
+      font-size:20px;
+      margin:10px;
+      cursor:pointer;}
+</style>
+<body>
+<h1>Light ON/OFF </h1>
+<img id="bulb"
+src="https://cdn.pixabay.com/photo/2014/11/26/21/09/bulb-546859_1280.jpg">
+<br>
+<button onclick="turnOn()">ON</button>
+<button onclick="turnOff()">OFF</button>
+<script>
+function turnOn(){
+document.getElementByid("bulb").src="https://newdocer.cache.wpscdn.com/photo/20191211/18519aea2994451eb451768f0846275f.jpg";}
+function turnOff(){
+document.getElementByid("bulb").src="https://png.pngtree.com/png-clipart/20220909/original/pngtree-off-button-in-red-png-image_8503422.png;"}
+</script>
+</body>
+</html>
